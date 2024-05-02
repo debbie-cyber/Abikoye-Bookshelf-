@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abikoye Bookshelf</title>
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+        integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url(backgroung.jpg);
+            background-position: 100%;
+            background-repeat: no-repeat;
+            background-color: chocolate;
+            background-size: cover;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+            line-height: 1.5;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .head {
+            background-color: black;
+            display: flex;
+            padding: 20px 60px;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            z-index: 100;
+            font-size: 30px;
+            color: cornsilk;
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .navbar {
+            height: 50px;
+            background-color: black;
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            padding: 0px;
+            margin: 0px;
+            text-decoration: none;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .navbar ul li {
+            margin-left: 25px;
+        }
+
+        .navbar ul li a {
+            float: left;
+            font-weight: bold;
+            font-size: 19;
+            transition: 0.4 ease;
+        }
+
+        .navbar a:hover {
+            background-color: brown;
+        }
+
+        .navbar a {
+            display: inline;
+            text-decoration: none;
+            color: gray;
+            font-size: 15px;
+            padding: 15px;
+            float: left;
+        }
+
+        .search {
+            position: relative;
+        }
+
+        .search input {
+            padding: 10px;
+            border: none;
+            border-radius: 20px;
+            background-color: gray;
+            color: bisque;
+        }
+
+        .search button {
+            bottom: 0;
+            position: absolute;
+            padding: 10px;
+            /* border-radius: none; */
+            border-radius: 20px;
+            background-color: white;
+            color: black;
+            font-weight: bold;
+            transition: 0.4 ease;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .flex-container {
+            display: flex;
+            height: 200px;
+            background-color: white;
+            justify-content: space-between;
+            box-sizing: border-box;
+        }
+
+        .flex-container>div {
+            background-color: white;
+            color: yellow;
+            width: 250px;
+            margin: 10px;
+            text-align: center;
+            line-height: 60px;
+            font-size: 15px;
+
+        }
+
+        .dee {
+            font-size: 10px;
+            font-style: oblique;
+            color: bisque;
+            margin-right: 70px;
+        }
+
+        p {
+            font-size: 25px;
+            color: bisque;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .next h1 {
+            color: bisque;
+            margin-top: 50px;
+            font-size: 50px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .books {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            margin-top: 40px;
+        }
+
+        .gallery {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .gallery img {
+            height: 400px;
+            width: 300px;
+            border-radius: 10px;
+            float: right;
+            transition: 1s;
+        }
+
+        footer {
+            padding-top: 100px;
+        }
+
+        .footercontainer {
+            width: 100%;
+            padding: 50px 10px 5px;
+        }
+
+        .socialicons {
+            display: flex;
+            justify-content: center;
+        }
+
+        .socialicons a {
+            text-decoration: none;
+            padding: 10px;
+            background-color: white;
+            margin: 10px;
+            border-radius: 30%;
+        }
+
+        .socialicons a i {
+            font-size: 2em;
+            color: black;
+            opacity: 0.9;
+        }
+
+        .socialicons a :hover {
+            background-color: gray;
+            transition: 0.5s;
+        }
+
+        .socialicons a :hover i {
+            color: white;
+            transition: 0.5s;
+        }
+
+        .footernav {
+            margin: 30px 0;
+        }
+
+        .footernav ul {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+        }
+
+        .footernav ul li a {
+            color: white;
+            margin: 20px;
+            text-decoration: none;
+            font-size: 1.3em;
+            opacity: 0.7;
+            transition: 0.5;
+            text-align: center;
+        }
+
+        .footernav ul li a:hover {
+            opacity: 1;
+        }
+
+        .footerbottom {
+            background-color: black;
+            padding: 5px;
+            text-align: center;
+        }
+
+        .footerbottom p {
+            color: white;
+            font-size: 20px;
+            background-color: black;
+
+        }
+
+        .designer {
+            opacity: 0.7;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 400;
+            margin: 0px 5px;
+        }
+
+        @media screen and (max-width: 800px) {
+
+            .left,
+            .main,
+            .right {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="head">ABIKOYE BOOKSTORE
+        <h6 class="dee">In God we Trust</h6>
+
+        <nav class="navbar">
+            <ul style="background-color: black;">
+                <li><a href="My books(1st pro).html">HOME</a></li>
+                <li><a href="new about.html" target="_blank">ABOUT US</a></li>
+                <li><a href="my 1st pro catx.html" target="_blank">CATEGORIES</a></li>
+                <li><a href="contact.html" target="_blank">CONTACT US</a></li>
+            </ul>
+        </nav>
+
+        <div class="search">
+            <input type="text" placeholder="Search...">
+            <button type="submit">GO!</button>
+        </div>
+        </div>
+
+    </header>
+    <div>
+        <h1
+            style="font-size: 50px; color: bisque; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; margin-top: 20px;">
+            ABIKOYE BOOKSTORE</h1>
+        <h6 class="dee">In God we Trust</h6>
+    </div>
+
+    <p>
+        <br>
+        Hey there! Welcome to <strong>Abikoye Bookstore</strong>. We're glad that you are
+        here. Our mission is to help
+        you discover the magic of reading. We have a wide selection of books. We have a wide selection of novels from
+        the latest bestsellers to classic novels. We belive that reading is more than just a pastime, it's a way of
+        life. It's a journey that takes you to different places, introduces you to different people, and broadens your
+        horizons. Our friendly and knowledgeable staffs are always on hand to help you find the perfect books that
+        matches your need. So come and visit us today, and let us help you find your great next read!
+    </p>
+
+
+    <div class="next">
+        <h1>FEATURED BOOKS</h1>
+        <div class="books">
+            <div class="gallery">
+                <a target="_blank" href="images2/backn.jpeg">
+                    <img src="images2/backn.jpeg" alt="A Spell of Good Things by Ayobami Adebayo" width="600"
+                        height="600">
+                </a>
+                <a href="my 1st pro catx.html"
+                    style="color: white; text-decoration: none; font-size: 30px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">FICTION</a>
+
+
+            </div>
+
+
+            <div class="gallery">
+                <a target="_blank" href="images2/backf.webp">
+                    <img src="images2/backf.webp" alt="After Lives by Abdulrazak Gurnah" width="600" height="400">
+                </a>
+                <a href="my 1st pro catx.html"
+                    style="color: white; text-decoration: none; font-size: 30px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">NON-FICTION</a>
+            </div>
+
+
+            <div class="gallery">
+                <a target="_blank" href="images2/backh.jpg">
+                    <img src="images2/backh.jpg" alt="How to be A Nigerian" width="600" height="400">
+                </a>
+                <a href="my 1st pro catx.html"
+                    style="color: white; text-decoration: none; font-size: 30px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">HISTORY</a>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <footer>
+        <div class="footercontainer">
+            <div class="socialicons">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <div class="footernav">
+                <ul>
+                    <li><a href="My books(1st pro).html">Home</a></li>
+                    <li><a href="new about.html" target="_blank">About Us</a></li>
+                    <li><a href="my 1st pro catx.html" target="_blank">Categories</a></li>
+                    <li><a href="contact.html" target="_blank">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerbottom">
+            <p>Copyright &copy; 2022; designed by <span class="designer">Deborah</span></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
