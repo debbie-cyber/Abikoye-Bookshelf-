@@ -1,0 +1,259 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-image: url(backgroung.jpg); */
+    background-position: 100%;
+    background-repeat: no-repeat;
+    background-color: wheat;
+    background-size: cover;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.head {
+    background-color: black;
+    display: flex;
+    padding: 20px 60px;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    z-index: 100;
+    font-size: 30px;
+    color: cornsilk;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.navbar {
+    height: 50px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar ul li {
+    margin-left: 25px;
+}
+
+.navbar ul li a {
+    float: left;
+    font-weight: bold;
+    font-size: 19;
+    transition: 0.4 ease;
+}
+
+.navbar a:hover {
+    background-color: brown;
+}
+
+.navbar a {
+    display: inline;
+    text-decoration: none;
+    color: gray;
+    font-size: 15px;
+    padding: 15px;
+    float: left;
+}
+
+.search {
+    position: relative;
+}
+
+.search input {
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: whitesmoke;
+    color: black;
+}
+
+.search button {
+    bottom: 0;
+    position: absolute;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    transition: 0.4 ease;
+}
+
+.keep:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+h2 {
+    text-align: center;
+}
+
+.flex-container {
+    display: flex;
+    height: 200px;
+    background-color: white;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.flex-container>div {
+    background-color: white;
+    color: yellow;
+    width: 250px;
+    margin: 10px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 15px;
+
+}
+
+.dee {
+    font-size: 10px;
+    font-style: oblique;
+    color: bisque;
+    margin-right: 70px;
+}
+
+p {
+    font-size: 25px;
+    color: brown;
+    text-align: inherit;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.next h1 {
+    color: brown;
+    margin-top: 50px;
+    font-size: 70px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.books {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 40px;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.gallery img {
+    height: 400px;
+    width: 300px;
+    border-radius: 10px;
+    float: right;
+    transition: 1s;
+}
+
+footer {
+    padding-top: 100px;
+}
+
+.footercontainer {
+    width: 100%;
+    padding: 50px 10px 5px;
+}
+
+.socialicons {
+    display: flex;
+    justify-content: center;
+}
+
+.socialicons a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 30%;
+}
+
+.socialicons a i {
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+}
+
+.socialicons a :hover {
+    background-color: gray;
+    transition: 0.5s;
+}
+
+.socialicons a :hover i {
+    color: white;
+    transition: 0.5s;
+}
+
+.footernav {
+    margin: 30px 0;
+}
+
+.footernav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.footernav ul li a {
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5;
+    text-align: center;
+}
+
+.footernav ul li a:hover {
+    opacity: 1;
+}
+
+.footerbottom {
+    background-color: black;
+    padding: 5px;
+    text-align: center;
+}
+
+.footerbottom p {
+    color: white;
+    font-size: 20px;
+    background-color: black;
+
+}
+
+.designer {
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
+@media screen and (max-width: 800px) {
+
+    .left,
+    .main,
+    .right {
+        width: 100%;
+    }
+}
