@@ -11,289 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
-    <style>
-        * {
-            margin: 0px;
-            padding: 0px;
-        }
-
-        body {
-            background-image: url(back.jpg);
-            background-repeat: no-repeat;
-            background-position: 100%;
-            background-size: cover;
-            line-height: 1.5;
-            margin: 0px;
-            padding: 0px;
-        }
-
-        p {
-            font-size: 20px;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            font-style: oblique;
-        }
-
-        h1 {
-            color: bisque;
-            margin-top: 20px;
-            font-size: 60px;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            text-align: center;
-        }
-
-        .books {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            margin-top: 40px;
-        }
-
-        .gallery {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-        }
-
-        .gallery img {
-            height: 400px;
-            width: 300px;
-            border-radius: 10px;
-            float: right;
-            transition: 1s;
-            margin-top: 50px;
-        }
-
-        .price {
-            color: cornsilk;
-        }
-
-        .books2 {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            margin-top: 40px;
-        }
-
-        .gallery2 {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-        }
-
-        .gallery2 img {
-            height: 400px;
-            width: 300px;
-            border-radius: 10px;
-            float: right;
-            transition: 1s;
-            margin-top: 50px;
-        }
-
-        .price2 {
-            color: cornsilk;
-        }
-
-        .books3 {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            margin-top: 40px;
-        }
-
-        .gallery3 {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-        }
-
-        .gallery3 img {
-            height: 400px;
-            width: 300px;
-            border-radius: 10px;
-            float: right;
-            transition: 1s;
-            margin-top: 50px;
-        }
-
-        .price3 {
-            color: cornsilk;
-        }
-
-        header {
-            background-color: black;
-            display: flex;
-            padding: 20px 60px;
-            justify-content: space-between;
-            align-items: center;
-            position: sticky;
-            z-index: 100;
-            font-size: 30px;
-            color: cornsilk;
-            text-align: center;
-            font-family: Georgia, 'Times New Roman', Times, serif;
-        }
-
-        .dee {
-            font-size: 10px;
-            font-style: oblique;
-            color: bisque;
-            margin-right: 70px;
-        }
-
-        .navbar {
-            height: 50px;
-            background-color: black;
-            display: flex;
-            align-items: center;
-        }
-
-        .navbar ul {
-            list-style-type: none;
-            padding: 0px;
-            margin: 0px;
-            text-decoration: none;
-            overflow: hidden;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .navbar ul li {
-            margin-left: 25px;
-        }
-
-        .navbar ul li a {
-            float: left;
-            font-weight: bold;
-            font-size: 19;
-            transition: 0.4 ease;
-        }
-
-        .navbar a:hover {
-            background-color: brown;
-        }
-
-        .navbar a {
-            display: inline;
-            text-decoration: none;
-            color: gray;
-            font-size: 15px;
-            padding: 15px;
-            float: left;
-        }
-
-        .search {
-            position: relative;
-        }
-
-        .search input {
-            padding: 10px;
-            border: none;
-            border-radius: 20px;
-            background-color: gray;
-            color: bisque;
-        }
-
-        .search button {
-            bottom: 0;
-            position: absolute;
-            padding: 10px;
-            border-radius: none;
-            border-radius: 20px;
-            background-color: white;
-            color: black;
-            font-weight: bold;
-            transition: 0.4 ease;
-        }
-
-        .footercontainer {
-            width: 100%;
-            padding: 50px 10px 5px;
-        }
-
-        .socialicons {
-            display: flex;
-            justify-content: center;
-        }
-
-        .socialicons a {
-            text-decoration: none;
-            padding: 10px;
-            background-color: white;
-            margin: 10px;
-            border-radius: 30%;
-        }
-
-        .socialicons a i {
-            font-size: 2em;
-            color: black;
-            opacity: 0.9;
-        }
-
-        .socialicons a :hover {
-            background-color: gray;
-            transition: 0.5s;
-        }
-
-        .socialicons a :hover i {
-            color: white;
-            transition: 0.5s;
-        }
-
-        .footernav {
-            margin: 30px 0;
-        }
-
-        .footernav ul {
-            display: flex;
-            justify-content: center;
-            list-style-type: none;
-        }
-
-        .footernav ul li a {
-            color: white;
-            margin: 20px;
-            text-decoration: none;
-            font-size: 1.3em;
-            opacity: 0.7;
-            transition: 0.5;
-            text-align: center;
-        }
-
-        .footernav ul li a:hover {
-            opacity: 1;
-        }
-
-        .footerbottom {
-            background-color: black;
-            padding: 5px;
-            text-align: center;
-        }
-
-        .footerbottom p {
-            color: white;
-            font-size: 20px;
-            background-color: black;
-
-        }
-
-        .designer {
-            opacity: 0.7;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            font-weight: 400;
-            margin: 0px 5px;
-        }
-
-
-        @media screen {
-            .responsive {
-                width: 100%;
-            }
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="style4.css">
 </head>
 
 <body>
@@ -323,9 +41,10 @@
         <div class="books">
             <div class="gallery">
                 <a target="_blank" href="images2/f17.jpg">
-                    <img src="images2/f17.jpg" alt="The Secret Lives of Baba Segi's Wives" width="600" height="600">
+                    <img src="images2/f17.jpg" alt="FINE BOYS by EGHOSA IMASUEN" width="600" height="600">
                 </a>
-                <div class="price">#1700</div>
+                <div class="price" style="padding-top: 5px;">FINE BOYS by EGHOSA IMASUEN <br> #1700
+                </div>
             </div>
 
 
@@ -333,7 +52,8 @@
                 <a target="_blank" href="images2/f2.jpeg">
                     <img src="images2/f2.jpeg" alt="Stay with Me by Ayobami Ayodele" width="600" height="600">
                 </a>
-                <div class="price">#2000</div>
+                <div class="price" style="padding-top: 5px;">STAY WITH ME by AYOBAMI AYODELE <br>
+                    #2000</div>
             </div>
 
             <div class="gallery">
@@ -341,75 +61,80 @@
                     <img src="images2/f3.jpg" alt="A Broken People's Playlist by Chimeka Garriks" width="600"
                         height="600">
                 </a>
-                <div class="price">#1500</div>
+                <div class="price" style="padding-top: 5px;">A BROKEN PEOPLE'S PLAYLIST by CHIMEKA
+                    GARRIKS <br> #1500</div>
             </div>
 
             <div class="gallery">
                 <a target="_blank" href="images2/f5.jpeg">
                     <img src="images2/f5.jpeg" alt="The Mad House by TJ Benson" width="600" height="600">
                 </a>
-                <div class="price">#3000</div>
+                <div class="price" style="padding-top: 5px;">THE MAD HOUSE by TJ BENSON <br> #3000
+                </div>
             </div>
 
             <div class="gallery">
                 <a target="_blank" href="images2/f6.jpeg">
                     <img src="images2/f6.jpeg" alt="Everything Good will Come by Sefi Atta" width="600" height="600">
                 </a>
-                <div class="price">#2500</div>
+                <div class="price" style="padding-top: 5px;">EVERYTHING GOOD WILL COME by SEFI ATTA
+                    <br> #2500
+                </div>
             </div>
 
             <div class="gallery">
                 <a target="_blank" href="images2/f7.jpeg">
                     <img src="images2/f7.jpeg" alt="Freshwater by Akwaeke Emezi" width="600" height="600">
                 </a>
-                <div class="price">#3000</div>
+                <div class="price" style="padding-top: 5px;">FRESHWATER by AKWAEKE EMEZI <br> #3000</div>
             </div>
 
             <div class="gallery">
                 <a target="_blank" href="images2/f8.jpg">
                     <img src="images2/f8.jpg" alt="Welcome to Lagos by Chibundu Onuzuwa" width="600" height="600">
                 </a>
-                <div class="price">#3000</div>
+                <div class="price" style="padding-top: 5px;">WELCOME TO LAGOS by CHIBUNDU ONUSUWA <br> #3000</div>
             </div>
 
             <div class="gallery">
                 <a target="_blank" href="images2/f9.jpeg">
                     <img src="images2/f9.jpeg" alt="A Woman's Body is a Country" width="600" height="600">
                 </a>
-                <div class="price">#4000</div>
+                <div class="price" style="padding-top: 5px;">A WOMAN'S BODY IS A COUNTRY by DAMI AJAYI <br> #4000</div>
             </div>
 
             <div class="gallery">
                 <a target="_blank" href="images2/f10.webp">
                     <img src="images2/f10.webp" alt="Wahala by Nikki May" width="600" height="600">
                 </a>
-                <div class="price">#2500</div>
+                <div class="price" style="padding-top: 5px;">WAHALA by NIKKI MAY <br> #2500</div>
             </div>
         </div>
 
 
         <div class="next2">
-            <h1>NON-FICTION</h1>
+            <h1 style="padding-top: 50px;">NON-FICTION</h1>
             <div class="books">
                 <div class="gallery2">
                     <a target="_blank" href="images2/n1.jpeg">
                         <img src="images2/n1.jpeg" alt="Honey and Spice by Bolu Babalola" width="600" height="600">
                     </a>
-                    <div class="price2">#1400</div>
+                    <div class="price2" style="padding-top: 5px;">HONEY AND SPICE by BOLU BABALOLA <br> #1400</div>
                 </div>
 
                 <div class="gallery2">
                     <a target="_blank" href="images2/n2.jpg">
                         <img src="images2/n2.jpg" alt="She Called me Woman" width="600" height="600">
                     </a>
-                    <div class="price2">#1900</div>
+                    <div class="price2" style="padding-top: 5px;">SHE CALLED ME WOMAN <br> #1900</div>
                 </div>
 
                 <div class="gallery2">
                     <a target="_blank" href="images2/n3.jpg">
                         <img src="images2/n3.jpg" alt="Americanah by Chimamanda Ngozi Adichie" width="600" height="600">
                     </a>
-                    <div class="price2">#3500</div>
+                    <div class="price2" style="padding-top: 5px;">AMERICANNAH by CHIMAMANDA NGOZI ADICHICHIE <br> #3500
+                    </div>
                 </div>
 
                 <div class="gallery2">
@@ -417,7 +142,9 @@
                         <img src="images2/n4.jpeg" alt="Manifesto on Never Giving Up by Bernardine Evaristo" width="600"
                             height="600">
                     </a>
-                    <div class="price2">#6500</div>
+                    <div class="price2" style="padding-top: 5px;">MANIFESTO ON NEVER GIVING UP by BERNARDINE EVARISTO
+                        <br> #6500
+                    </div>
                 </div>
 
                 <div class="gallery2">
@@ -425,7 +152,8 @@
                         <img src="images2/n5.jpg" alt="AKE: the years of childhood by Wole Soyinka" width="600"
                             height="600">
                     </a>
-                    <div class="price2">#8000</div>
+                    <div class="price2" style="padding-top: 5px;">AKE: THE YEARS OF CHILHOOD BY WOLE SOYINKA <br> #8000
+                    </div>
                 </div>
 
                 <div class="gallery2">
@@ -433,7 +161,8 @@
                         <img src="images2/n6.jpeg" alt="We should all be Feminists by Chimamanda Ngozi Adichie"
                             width="600" height="600">
                     </a>
-                    <div class="price2">#3000</div>
+                    <div class="price2" style="padding-top: 5px;">WE SHOULD ALL BR FEMINISTS BY CHIMAMANDA <br> NGOZI
+                        ADICHIE <br> #3000</div>
                 </div>
 
                 <div class="gallery2">
@@ -441,7 +170,8 @@
                         <img src="images2/n7.jpg" alt="Where The Children Take Us by Zain.E.Asher" width="600"
                             height="600">
                     </a>
-                    <div class="price2">#7000</div>
+                    <div class="price2" style="padding-top: 5px;">WHERE THE CHILDREN TAKE US by ZAIN.E.ASHER <br> #7000
+                    </div>
                 </div>
 
                 <div class="gallery2">
@@ -449,14 +179,15 @@
                         <img src="images2/n8.jpg" alt="You Made a Fool of Death With Your Beauty by Akwaeke Emezi"
                             width="600" height="600">
                     </a>
-                    <div class="price2">#3800</div>
+                    <div class="price2" style="padding-top: 5px;">YOU MADE A FOOL OF DEATH WITH YOUR BEAUTY by <br>
+                        AKWAEKE EMEZI <br> #3800</div>
                 </div>
 
                 <div class="gallery2">
                     <a target="_blank" href="images2/n9.jpg">
                         <img src="images2/n9.jpg" alt="Home and Exile by Chinua Achebe" width="600" height="600">
                     </a>
-                    <div class="price2">#2700</div>
+                    <div class="price2" style="padding-top: 10px;">HOME AND EXILE by CHINUA ACHEBE<br>#2700</div>
                 </div>
             </div>
 
@@ -466,11 +197,12 @@
                 <div class="books">
                     <div class="gallery3">
                         <a target="_blank" href="images2/h1.webp">
-                            <img src="images2/h1.webp"
-                                alt="HA History of Nigeria by Toyin Falola and Matthew.M.Eseathon" width="600"
-                                height="600">
+                            <img src="images2/h1.webp" alt="A History of Nigeria by Toyin Falola and Matthew.M.Eseathon"
+                                width="600" height="600">
                         </a>
-                        <div class="price3">#5000</div>
+                        <div class="price3" style="padding-top: 7px;">A HISTORY OF NIGERIA by <br> TOYIN FALOLA AND
+                            MATTHEW.M.ESEATHON<br>#5000
+                        </div>
                     </div>
 
                     <div class="gallery3">
@@ -479,7 +211,9 @@
                                 alt="A Day Before Valentine:An Examination of the Original History of Nigeria by Micheal Ayobamidele"
                                 width="600" height="600">
                         </a>
-                        <div class="price3">#4000</div>
+                        <div class="price3" style="padding-top: 7px;">A DAY BEFORE VALENTINE:<br>AN EXAMINATION OF THE
+                            ORIGINAL HISTORY OF
+                            NIGERIA by MICHEAL AYOBAMIDELE <br> #4000</div>
                     </div>
 
                     <div class="gallery3">
@@ -488,14 +222,16 @@
                                 alt="Our Destiny is in our Hands:A History of Governanace in Nigeria since Independence by Yusuf Ibrahim Gamava"
                                 width="600" height="600">
                         </a>
-                        <div class="price3">#7000</div>
+                        <div class="price3" style="padding-top: 7px;">OUR DESTINY IS OUR HANDS:<br>A HISTORY OF
+                            GOVERNANCE IN NIGERIA SINCE
+                            INDEPENDENCE<br>by YUSUF IBRAHIM GAMAVA<br>#7000</div>
                     </div>
 
                     <div class="gallery3">
                         <a target="_blank" href="images2/h4.jpg">
                             <img src="images2/h4.jpg" alt="Efuru by Flora Nwapa" width="600" height="600">
                         </a>
-                        <div class="price3">#2000</div>
+                        <div class="price3" style="padding-top: 5px;">EFURU by FLORA NWAPA<br>#2000</div>
                     </div>
 
                     <div class="gallery3">
@@ -503,7 +239,8 @@
                             <img src="images2/h5.jpg" alt="Purple Hibiscus by Chimamanda Ngozi Adichie" width="600"
                                 height="600">
                         </a>
-                        <div class="price3">#2500</div>
+                        <div class="price3" style="padding-top: 5px;">PURPLE HIBISCUS by CHIMAMANDA NGOZI
+                            ADICHIE<br>#2500</div>
                     </div>
 
                     <div class="gallery3">
@@ -511,21 +248,23 @@
                             <img src="images2/h6.jpeg" alt="There was A Country by Chinua Achebe" width="600"
                                 height="600">
                         </a>
-                        <div class="price3">#3000</div>
+                        <div class="price3" style="padding-top: 5px;">THERE WAS A COUNTRY BY CHINUA ACHEBE<br>#3000
+                        </div>
                     </div>
 
                     <div class="gallery3">
                         <a target="_blank" href="images2/h6.webp">
                             <img src="images2/h6.webp" alt="LAGOS by Kaye Whiteman" width="600" height="600">
                         </a>
-                        <div class="price3">#4500</div>
+                        <div class="price3" style="padding-top: 5px;">LAGOS by KAYE WHITEMAN<br>#4500</div>
                     </div>
 
                     <div class="gallery3">
                         <a target="_blank" href="images2/h7.jpg">
                             <img src="images2/h7.jpg" alt="A Month and A Day & Letters" width="600" height="600">
                         </a>
-                        <div class="price2">#6700</div>
+                        <div class="price2" style="padding-top: 5px;">A MONTH AND A DAY & LETTERS by KEN
+                            SARO-WIWA<br>#6700</div>
                     </div>
 
                     <div class="gallery2">
@@ -533,7 +272,8 @@
                             <img src="images2/h8.jpg" alt="In The Shadow of Ruin by Tony Debajo" width="600"
                                 height="600">
                         </a>
-                        <div class="price2">#2700</div>
+                        <div class="price2" style="padding-top: 5px;">IN THE SHADOW OF RUIN by TONY DEBAJO<br>#2700
+                        </div>
                     </div>
                 </div>
 
