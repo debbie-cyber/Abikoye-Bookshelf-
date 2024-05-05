@@ -1,0 +1,306 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: darkgrey;
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: cover;
+    line-height: 1.5;
+    margin: 0px;
+    padding: 0px;
+}
+
+p {
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: oblique;
+}
+
+h1 {
+    color: black;
+    margin-top: 20px;
+    font-size: 80px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    padding-top: 10px;
+}
+
+h1:hover {
+    cursor: pointer;
+}
+
+.books {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 40px;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.gallery img {
+    height: 400px;
+    width: 300px;
+    border-radius: 10px;
+    float: right;
+    transition: 1s;
+    margin-top: 50px;
+}
+
+.books2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 40px;
+}
+
+.gallery2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.gallery2 img {
+    height: 400px;
+    width: 300px;
+    border-radius: 10px;
+    float: right;
+    transition: 1s;
+    margin-top: 50px;
+}
+
+
+.books3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 40px;
+}
+
+.gallery3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.gallery3 img {
+    height: 400px;
+    width: 300px;
+    border-radius: 10px;
+    float: right;
+    transition: 1s;
+    margin-top: 50px;
+}
+
+header {
+    background-color: black;
+    display: flex;
+    padding: 20px 60px;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    z-index: 100;
+    font-size: 30px;
+    color: cornsilk;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.dee {
+    font-size: 10px;
+    font-style: oblique;
+    color: bisque;
+    margin-right: 70px;
+}
+
+.navbar {
+    height: 50px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar ul li {
+    margin-left: 25px;
+}
+
+.navbar ul li a {
+    float: left;
+    font-weight: bold;
+    font-size: 19;
+    transition: 0.4 ease;
+}
+
+.navbar a:hover {
+    background-color: brown;
+}
+
+.navbar a {
+    display: inline;
+    text-decoration: none;
+    color: gray;
+    font-size: 15px;
+    padding: 15px;
+    float: left;
+}
+
+.search {
+    position: relative;
+}
+
+.search input {
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: whitesmoke;
+    color: black;
+}
+
+.search button {
+    bottom: 0;
+    position: absolute;
+    padding: 10px;
+    border-radius: none;
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    transition: 0.4 ease;
+}
+
+.price {
+    font-size: large;
+    color: turquoise;
+    transition: 0.2 ease-in-out;
+}
+
+.price:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.price2 {
+    font-size: large;
+    color: turquoise;
+    transition: 0.2 ease-in-out;
+}
+
+.price2:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.price3 {
+    font-size: large;
+    color: turquoise;
+    transition: 0.2 ease-in-out;
+}
+
+.price3:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.footercontainer {
+    width: 100%;
+    padding: 50px 10px 5px;
+}
+
+.socialicons {
+    display: flex;
+    justify-content: center;
+}
+
+.socialicons a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 30%;
+}
+
+.socialicons a i {
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+}
+
+.socialicons a :hover {
+    background-color: gray;
+    transition: 0.5s;
+}
+
+.socialicons a :hover i {
+    color: white;
+    transition: 0.5s;
+}
+
+.footernav {
+    margin: 30px 0;
+}
+
+.footernav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.footernav ul li a {
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5;
+    text-align: center;
+}
+
+.footernav ul li a:hover {
+    opacity: 1;
+}
+
+.footerbottom {
+    background-color: black;
+    padding: 5px;
+    text-align: center;
+}
+
+.footerbottom p {
+    color: white;
+    font-size: 20px;
+    background-color: black;
+
+}
+
+.designer {
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
+
+@media screen {
+    .responsive {
+        width: 100%;
+    }
+}
