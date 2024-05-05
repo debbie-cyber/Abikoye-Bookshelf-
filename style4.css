@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: darkgrey;
+    background-color: wheat;
     background-repeat: no-repeat;
     background-position: 100%;
     background-size: cover;
@@ -188,7 +188,7 @@ header {
 
 .price {
     font-size: large;
-    color: turquoise;
+    color: black;
     transition: 0.2 ease-in-out;
 }
 
@@ -199,7 +199,7 @@ header {
 
 .price2 {
     font-size: large;
-    color: turquoise;
+    color: black;
     transition: 0.2 ease-in-out;
 }
 
@@ -210,7 +210,7 @@ header {
 
 .price3 {
     font-size: large;
-    color: turquoise;
+    color: black;
     transition: 0.2 ease-in-out;
 }
 
